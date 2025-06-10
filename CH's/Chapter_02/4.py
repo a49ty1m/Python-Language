@@ -1,0 +1,8 @@
+a = input("Enter a number: ")
+b = input("Enter another number: ")
+print("Comparision of", a,"and", b,"for", a,"==", b,"is", a == b)
+print("Comparision of", a,"and", b,"for", a,"!=", b,"is", a != b)
+print("Comparision of", a,"and", b,"for", a,"<", b,"is", a < b)
+print("Comparision of", a,"and", b,"for", a,"<=", b,"is", a <= b)
+print("Comparision of", a,"and", b,"for", a,">", b,"is", a > b)
+print("Comparision of", a,"and", b,"for", a,">=", b,"is", a >= b)
