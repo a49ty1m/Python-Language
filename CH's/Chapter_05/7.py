@@ -8,3 +8,5 @@ print("The Dictionary of Students with their marks is:", d)
 print(d.items())
 print(d.keys())
 print("The Dictionary of student with their marks in soreted order is:", sorted(d.values()))
+
+# if keys are same, it will update the value of that key 
