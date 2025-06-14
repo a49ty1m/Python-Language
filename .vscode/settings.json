@@ -1,9 +1,0 @@
-{
-    "editor.quickSuggestions": {
-        "comments": "on",
-        "strings": "on"
-    },
-    "editor.inlineSuggest.suppressSuggestions": false,
-    "editor.inlineSuggest.edits.showCollapsed": true,
-    "editor.inlineSuggest.enabled": false
-}
