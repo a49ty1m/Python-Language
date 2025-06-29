@@ -1,6 +1,0 @@
-{
-    "editor.inlineSuggest.suppressSuggestions": true,
-    "editor.inlineSuggest.edits.showCollapsed": true,
-    "editor.inlineSuggest.enabled": true,
-    "github.copilot.chat.agent.autoFix": false
-}
