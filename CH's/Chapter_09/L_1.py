@@ -1,3 +1,3 @@
-f = open("hii.txt")
+f = open("hi.txt")
 print(f.read())
-f.close()   
+f.close()
