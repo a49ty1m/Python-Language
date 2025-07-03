@@ -1,0 +1,5 @@
+Hi This Is MyFile.txt File Created By Pythony
+Hi
+how are you
+I'm Smilo 
+who is a coder and Im 
