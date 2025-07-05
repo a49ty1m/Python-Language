@@ -1,0 +1,31 @@
+## How it works:
+
+
+## Complete example:
+
+````python
+class number:
+    def __init__(self, a):
+        self.a = a
+
+    def __add__(self, other):
+        return self.a + other.a  # self.a (10) + other.a (5) = 15
+
+    def __sub__(self, other):
+        return self.a - other.a
+
+    def __mul__(self, other):
+        return self.a * other.a
+
+    def __truediv__(self, other):
+        return self.a / other.a
+
+# Create two number objects
+x = number(10)  # x.a = 10
+y = number(5)   # y.a = 5
+
+# Other operations
+print(x - y)    # Output: 5 (10 - 5)
+print(x * y)    # Output: 50 (10 * 5)
+print(x / y)    # Output: 2.0 (10 / 5)
+````
