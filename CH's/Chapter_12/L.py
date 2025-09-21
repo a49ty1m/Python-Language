@@ -203,7 +203,7 @@ index = 0
 for item in l: 
     print(f"Index of item {item} is {index}")
     index += 1
-#this i cool zindagi but 
+#this is cool zindagi but 
 #now we use enumerate
 for index, item in enumerate(l):
     print(f"Index of item {item} is {index}")
