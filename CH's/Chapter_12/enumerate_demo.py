@@ -6,8 +6,8 @@ print("What enumerate actually returns:")
 for item in enumerate(my_list):
     print(f"enumerate returns: {item}")
     print(f"Type: {type(item)}")
-    print(f"First element (index): {item[0]}")
-    print(f"Second element (value): {item[1]}")
+    print(f"First, element (index): {item[0]}")
+    print(f"Second, element (value): {item[1]}")
     print("---")
 
 print("\nUsing tuple unpacking:")
