@@ -173,11 +173,12 @@ def main():
 # It is often used for cleanup actions, like closing files or releasing resources.
 main()
 '''
+
 """__name__ and __main__"""
 '''
 import module
 # This will import the module and execute the code in it
-#this will print nothing go and check the module.py file
+#this will print nothing, go and check the module.py file
 '''
 
 """Global and Local Variables"""

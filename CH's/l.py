@@ -11,3 +11,4 @@ d=a.split()# this will split the string into a list of characters
 # they will be treated as a single space.
 # This is useful for cleaning up strings with irregular spacing.
 print(d)
+

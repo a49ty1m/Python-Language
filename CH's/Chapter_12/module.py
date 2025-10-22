@@ -5,5 +5,8 @@ def my():
 if __name__ == "__main__":
     #This will only run if this file is run directly, not if it is imported
     my()
-    print(__name__)
+    print(__name__) #output: __main__
+else:
+    my()
+    print(__name__) #output: module 
 #this will print the name as main if this file is run directly, or the name of the module if imported after the hello world function is called
