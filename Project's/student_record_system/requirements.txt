@@ -1,4 +1,0 @@
-# Student Record Management & Marks Analysis System
-# Dependencies
-
-numpy>=1.21.0
