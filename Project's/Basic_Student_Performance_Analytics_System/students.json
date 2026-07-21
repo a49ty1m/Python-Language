@@ -1,0 +1,112 @@
+[
+  {
+    "roll": 1,
+    "name": "Student_1",
+    "age": 22,
+    "course": "CS",
+    "marks": {
+      "Python": 66.0,
+      "NumPy": 90.0,
+      "Database": 66.0
+    }
+  },
+  {
+    "roll": 2,
+    "name": "Student_2",
+    "age": 19,
+    "course": "CS",
+    "marks": {
+      "Python": 83.0,
+      "NumPy": 72.0,
+      "Database": 98.0
+    }
+  },
+  {
+    "roll": 3,
+    "name": "Student_3",
+    "age": 21,
+    "course": "CS",
+    "marks": {
+      "Python": 62.0,
+      "NumPy": 44.0,
+      "Database": 79.0
+    }
+  },
+  {
+    "roll": 4,
+    "name": "Student_4",
+    "age": 23,
+    "course": "CS",
+    "marks": {
+      "Python": 70.0,
+      "NumPy": 56.0,
+      "Database": 100.0
+    }
+  },
+  {
+    "roll": 5,
+    "name": "Student_5",
+    "age": 22,
+    "course": "CS",
+    "marks": {
+      "Python": 39.0,
+      "NumPy": 46.0,
+      "Database": 42.0
+    }
+  },
+  {
+    "roll": 6,
+    "name": "Student_6",
+    "age": 22,
+    "course": "CS",
+    "marks": {
+      "Python": 68.0,
+      "NumPy": 74.0,
+      "Database": 36.0
+    }
+  },
+  {
+    "roll": 7,
+    "name": "Student_7",
+    "age": 23,
+    "course": "CS",
+    "marks": {
+      "Python": 95.0,
+      "NumPy": 96.0,
+      "Database": 69.0
+    }
+  },
+  {
+    "roll": 8,
+    "name": "Student_8",
+    "age": 22,
+    "course": "CS",
+    "marks": {
+      "Python": 91.0,
+      "NumPy": 88.0,
+      "Database": 48.0
+    }
+  },
+  {
+    "roll": 9,
+    "name": "Student_9",
+    "age": 19,
+    "course": "CS",
+    "marks": {
+      "Python": 51.0,
+      "NumPy": 69.0,
+      "Database": 64.0
+    }
+  },
+  {
+    "roll": 10,
+    "name": "Student_10",
+    "age": 22,
+    "course": "CS",
+    "marks": {
+      "Python": 87.0,
+      "NumPy": 36.0,
+      "Database": 68.0
+    }
+  }
+]
