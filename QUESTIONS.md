@@ -34,6 +34,7 @@
 | 22 | [Secure Coding Practices](#22-secure-coding-practices) | ~15 |
 | 23 | [Code Quality & Professional Workflow](#23-code-quality--professional-workflow) | ~15 |
 | 24 | [Capstone Projects](#24-capstone-projects) | ~10 |
+| 25 | [Professional Curriculum Extensions](#25-professional-curriculum-extensions) | 80 |
 
 ---
 
@@ -892,3 +893,121 @@ Each project must have: a README, argparse CLI, logging, error handling, tests, 
 ---
 
 *Keep this file as a living checklist. Check off questions as you complete them. Revisit unchecked ones before interviews.*
+
+---
+
+## 25. Professional Curriculum Extensions
+
+**Difficulty:** 🟢 Easy · 🟡 Medium · 🔴 Hard · ⚫ Interview / design discussion
+
+### 25.1 Algorithms & Complexity
+
+- [ ] 🟢 State the time and space complexity of list indexing, list append, set membership, and dictionary lookup.
+- [ ] 🟡 Explain why dictionary lookup is average-case O(1), rather than guaranteed O(1).
+- [ ] 🟡 Replace a nested-loop duplicate check with a set-based solution; compare time and memory complexity.
+- [ ] 🟡 Find two values in a sorted list that add to a target using the two-pointer technique.
+- [ ] 🟡 Find the longest substring without repeated characters with a sliding window.
+- [ ] 🟡 Implement iterative binary search and return the insertion position when a target is absent.
+- [ ] 🔴 Compare brute-force, sort-and-search, and hash-map solutions to the two-sum problem.
+- [ ] ⚫ Identify the time and space bottleneck in one automation project and justify an improvement with measurements.
+
+### 25.2 Data Structures & Recursion
+
+- [ ] 🟢 Implement a stack with a list and use it to validate balanced parentheses.
+- [ ] 🟢 Implement a FIFO queue with `collections.deque`; explain why it is preferable to `list.pop(0)`.
+- [ ] 🟡 Implement a singly linked list with append, search, insert, and delete operations.
+- [ ] 🟡 Build an LRU cache with `OrderedDict` or an equivalent design; test its eviction behavior.
+- [ ] 🟡 Implement binary-tree preorder, inorder, and postorder traversal.
+- [ ] 🟡 Use `heapq` to keep the top `k` largest values from a stream.
+- [ ] 🔴 Solve a grid maze using BFS and return the shortest valid path.
+- [ ] ⚫ Explain when recursion is less reliable in Python than an explicit stack, using directory traversal as an example.
+
+### 25.3 Functional Python & Iterators
+
+- [ ] 🟢 Use `enumerate` and `zip` to produce a numbered report from two related lists.
+- [ ] 🟢 Use `any` and `all` to validate a batch of input records.
+- [ ] 🟡 Recreate one transformation with a comprehension, `map`, and `filter`; compare readability.
+- [ ] 🟡 Use `functools.reduce` to combine values and explain when a loop is clearer.
+- [ ] 🟡 Use `itertools.chain`, `islice`, `groupby`, and `product` on small sample data.
+- [ ] 🟡 Write a closure that creates configurable threshold-checking functions.
+- [ ] 🔴 Use `functools.lru_cache` to optimize a recursive calculation and verify cache behavior.
+- [ ] ⚫ Explain the memory trade-off between a lazy iterator pipeline and a materialized list.
+
+### 25.4 Type Hints & Interfaces
+
+- [ ] 🟢 Add parameter and return type hints to a small calculator module.
+- [ ] 🟢 Use `list[str]`, `dict[str, int]`, `tuple[str, int]`, `Optional`, and `Union` correctly.
+- [ ] 🟡 Model validated configuration with `TypedDict`, including required and optional keys.
+- [ ] 🟡 Use `Literal` to constrain a function to supported modes.
+- [ ] 🟡 Write a generic `first_item` function with `TypeVar`.
+- [ ] 🟡 Define a `Protocol` for a logging dependency and inject a compatible implementation.
+- [ ] 🔴 Run a type checker on a project and correct meaningful errors without hiding them behind broad `Any` types.
+- [ ] ⚫ Distinguish static type checking, runtime validation, nominal typing, and structural typing.
+
+### 25.5 Standard Library Mastery
+
+- [ ] 🟢 Use `pathlib` to find only `.log` files in a directory you own and `tempfile` to create disposable test data.
+- [ ] 🟡 Copy, move, archive, and inspect test files with `shutil` without overwriting an unexpected target.
+- [ ] 🟡 Parse timezone-aware timestamps with `datetime`, measure elapsed time with `time.perf_counter`, and display a month using `calendar`.
+- [ ] 🟡 Read validated INI configuration with `configparser`; generate record IDs with `uuid` and secure tokens with `secrets`.
+- [ ] 🟡 Run a harmless command using `subprocess.run` with an argument list, timeout, and `check=True`.
+- [ ] 🟡 Use `hashlib`, `base64`, `hmac`, and `ipaddress` in small examples; explain their distinct purposes.
+- [ ] 🔴 Create a SQLite-backed local inventory with parameterized queries, transactions, and schema initialization.
+- [ ] ⚫ Explain how to choose among a flat file, SQLite, and a remote database for an automation tool.
+
+### 25.6 Advanced NumPy & Pandas
+
+- [ ] 🟢 Demonstrate the difference between a NumPy view and copy by changing a slice.
+- [ ] 🟡 Use integer-array indexing, Boolean masks, `np.where`, and `np.clip` without Python loops.
+- [ ] 🟡 Explain `strides`, contiguous memory, and why memory layout can affect performance.
+- [ ] 🟡 Use `np.linalg` to solve a small linear system and verify the solution.
+- [ ] 🟡 Create a Pandas pivot table, then reshape it with `melt` and `pivot`.
+- [ ] 🟡 Normalize a list-valued Pandas column with `explode` and use categorical data to control ordering.
+- [ ] 🔴 Use `groupby().transform()` and rolling metrics without losing the original DataFrame rows.
+- [ ] ⚫ Benchmark vectorized NumPy/Pandas code against a loop-based solution and report time/memory trade-offs.
+
+### 25.7 Advanced Networking
+
+- [ ] 🟢 Resolve and connect to IPv6 localhost in a controlled test environment.
+- [ ] 🟡 Use `selectors` to multiplex several non-blocking localhost socket connections.
+- [ ] 🟡 Explain, at a high level, how `select`, `epoll`, and `kqueue` support event-driven networking.
+- [ ] 🟡 Describe ICMP, ARP, DHCP, and packet fragmentation and their roles in a network.
+- [ ] 🟡 Inspect an offline lab PCAP for ICMP and ARP traffic without generating live packets.
+- [ ] 🟡 Explain raw sockets conceptually, including privilege requirements and authorization boundaries.
+- [ ] 🔴 Implement a local `asyncio` echo service with cancellation, timeouts, and graceful shutdown.
+- [ ] ⚫ Compare TCP, UDP, HTTP/1.1, HTTP/2, and WebSocket for a real-time application design.
+
+### 25.8 Modern HTTP & Later Security Libraries
+
+> ⚠️ Use security libraries only in isolated labs, CTFs, test services, or against files and systems you own or are explicitly authorized to assess.
+
+- [ ] 🟢 Compare `urllib3`, `requests`, `httpx`, and `aiohttp` for synchronous and asynchronous API clients.
+- [ ] 🟡 Build an `httpx` client for a permitted test API with timeouts, retries, and response validation.
+- [ ] 🟡 Parse and validate a JWT locally without treating an unverified payload as trusted.
+- [ ] 🟡 Explain OAuth 2.0 roles and use `requests-oauthlib` only with a test provider and non-production credentials.
+- [ ] 🟡 Use `yara-python` with harmless test strings to write and validate a simple detection rule.
+- [ ] 🟡 Inspect only a training binary or a file you own with `pefile`, LIEF, or Capstone; record basic metadata.
+- [ ] 🔴 Use `angr` or Unicorn only on a CTF or self-created program, focusing on defensive understanding.
+- [ ] ⚫ Write a lab safety plan defining scope, authorization, data handling, and cleanup for binary-analysis work.
+
+### 25.9 Testing, Coverage & CI
+
+- [ ] 🟢 Write `pytest` fixtures that create temporary test data and remove it after each test.
+- [ ] 🟡 Use `unittest.mock.patch` to isolate an HTTP client from the network.
+- [ ] 🟡 Parameterize tests for normal values, boundary values, and invalid input.
+- [ ] 🟡 Measure coverage and identify meaningful untested branches rather than chasing a percentage blindly.
+- [ ] 🟡 Run an integration test for a CLI tool using a temporary directory and subprocess.
+- [ ] 🟡 Configure GitHub Actions to run formatting, linting, type checks, and tests on pushes and pull requests.
+- [ ] 🔴 Add a regression test for a discovered bug and verify it would have failed before the fix.
+- [ ] ⚫ Define a CI quality gate for a security-oriented project, including dependency review and secret scanning.
+
+### 25.10 Challenges & Interview Practice
+
+- [ ] 🟢 Build a command-line expense tracker using functions, JSON storage, validation, and a monthly summary.
+- [ ] 🟡 Build a personal GitHub API client for a test or personal account, including pagination, retries, and tests.
+- [ ] 🟡 Build a typed, configurable IOC extractor for local files and export a Markdown report.
+- [ ] 🟡 Build an authorized log-anomaly detector using a sliding window and document likely false positives.
+- [ ] 🟡 Build an offline PCAP report generator with filters, protocol summaries, and JSON output.
+- [ ] 🔴 Refactor an O(n²) operation in one project and benchmark the improvement.
+- [ ] 🔴 Review a small script for algorithmic complexity, unsafe input handling, poor testability, and missing documentation.
+- [ ] ⚫ Present the architecture, authorization controls, failure modes, and limitations of one project in a mock interview.
