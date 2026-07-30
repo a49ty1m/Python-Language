@@ -1,0 +1,9 @@
+Creatig a hangman game using python:
+
+1. Create a Greeting 
+2. Create Your Wordlist
+3. Randomly Select a Word from The Wordlist you have created
+4. Ask The User To Guess a Letter
+5. Bonus make the program take the input from the user and make it lowercase
+6. Check if the letter is in the word or not 
+
