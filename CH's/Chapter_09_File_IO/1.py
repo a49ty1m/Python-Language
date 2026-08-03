@@ -1,4 +1,4 @@
-f= open("CH's/Chapter_09/poem.txt", "r")
+f= open("CH's/Chapter_09_File_IO/poem.txt", "r")
 # print(f.read())
 c = f.read()  # Reading the entire file
 if ("star" in c):

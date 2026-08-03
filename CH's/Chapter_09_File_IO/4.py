@@ -1,10 +1,10 @@
 word = "donkey"
-with open("CH's/Chapter_09/hi.txt", "r") as f:
+with open("CH's/Chapter_09_File_IO/hi.txt", "r") as f:
     content=f.read()
     if word in content:
         print(f"The word '{word}' is present in the file.")
         content = content.replace(word, "****")
-        with open("CH's/Chapter_09/hi.txt", "w") as f:
+        with open("CH's/Chapter_09_File_IO/hi.txt", "w") as f:
             f.write(content)
         print(f"The word '{word}' has been replaced with '****'.")
     else:
@@ -15,12 +15,12 @@ with open("CH's/Chapter_09/hi.txt", "r") as f:
 '''this code replaces the word "donkey" with "****" in the file "hi.txt"'''
 
 # word = "****"
-# with open("CH's/Chapter_09/hi.txt", "r") as f:
+# with open("CH's/Chapter_09_File_IO/hi.txt", "r") as f:
 #     content=f.read()
 #     if word in content:
 #         print(f"The word '{word}' is present in the file.")
 #         content = content.replace(word, "donkey")
-#         with open("CH's/Chapter_09/hi.txt", "w") as f:
+#         with open("CH's/Chapter_09_File_IO/hi.txt", "w") as f:
 #             f.write(content)
 #         print(f"The word '{word}' has been replaced with 'donkey'.")
 #     else:

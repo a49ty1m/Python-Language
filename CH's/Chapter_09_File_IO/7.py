@@ -1,4 +1,4 @@
-with open("CH's/Chapter_09/log.txt", "r") as f:
+with open("CH's/Chapter_09_File_IO/log.txt", "r") as f:
     lines=f.readlines()
     # this will store lines in a list
     line_no=1

@@ -2,7 +2,7 @@ def gen_table(n):
     table=""
     for a in range(1, 11):
         table += f"{n} x {a} = {n * a}\n"
-    with open(f"CH's/Chapter_09/table_of_{n}.txt", "w") as f:
+    with open(f"CH's/Chapter_09_File_IO/table_of_{n}.txt", "w") as f:
         f.write(table)
     print(f"Table of {n} generated successfully.")
 # This code generates multiplication tables from 1 to 20 and saves them in separate text files

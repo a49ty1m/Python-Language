@@ -6,7 +6,7 @@ def game():
     # This is a random score generator
     print(f"Your score is: {score}")
     #this is a random generated score
-    with open("CH's/Chapter_09/score.txt",) as f:
+    with open("CH's/Chapter_09_File_IO/score.txt",) as f:
         hi_score = f.read()
     #here we are reading the high score from the file
     if (hi_score == ""):
@@ -18,7 +18,7 @@ def game():
     #because the high score is stored as a string in the file
     if (score > hiscore):
         print("congratulations! You have a new high score!")
-        with open("CH's/Chapter_09/score.txt", "w") as f:
+        with open("CH's/Chapter_09_File_IO/score.txt", "w") as f:
             f.write(str(score))
     #here we are checking if the score is greater than the high score
     #if it is then we will write the new high score to the file
