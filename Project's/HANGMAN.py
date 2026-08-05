@@ -1,20 +1,19 @@
-from os import truncate
 import random
 
-name = input("What is your name? : ")
-def greet(name):
+def greet():
+    name = input("What is your name? : ").strip()
     print(f"Hello {name}, Welcome to the HANGMAN's Game")
-greet(name)
+    return name
+
+name = greet()
 
 wordlist = ["hacker", "devlop", "poetry", "master", "python", "cyborg", "smiloo", "bugbug", "random"]
 secret_word = random.choice(wordlist)
-print( secret_word)
+# DEBUG — remove before sharing
+print("[DEBUG] secret_word:", secret_word)
 
-
-word = []
-
-for _ in range(len(secret_word)):
-    word.append("_")
+word=["_"]*len(secret_word)
+#word= list("_"*len(secret_word))
 print(word)
 
 game_over = False
