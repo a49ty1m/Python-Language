@@ -1,39 +1,142 @@
 import random
 
+# ── Constants ─────────────────────────────────────────────────
+
+
 def greet():
     name = input("What is your name? : ").strip()
-    print(f"Hello {name}, Welcome to the HANGMAN's Game")
+    print(f"Hello {name}, Welcome to the HANGMAN's Game\n")
     return name
 
+
+def valid_guess(guessed_letters):
+    """keeps asking for a valid letter until it gets one"""
+    while True:
+        guess = input("Guess a Letter: ").lower().strip()
+        if len(guess) != 1 or not guess.isalpha():
+            print("Please Enter A Valid Letter")
+        elif guess in guessed_letters:
+            print("You Already Guessed That")
+        else:
+            return guess
+
+
+def display_status(word, fail, guessed_letters):
+    """Print the hangman drawing, word progress, and guessed letters."""
+    print(HANGMAN_STAGES[fail])
+    print("\nWord:    ", " ".join(word))
+    print("Guessed: ", ", ".join(sorted(guessed_letters)) if guessed_letters else "none")
+    print(f"Lives:    {max_life - fail} / {max_life}\n")
+
+
+# ── Setup ───────────────────────────────────────────────────────
 name = greet()
 
 wordlist = ["hacker", "devlop", "poetry", "master", "python", "cyborg", "smiloo", "bugbug", "random"]
 secret_word = random.choice(wordlist)
 # DEBUG — remove before sharing
 print("[DEBUG] secret_word:", secret_word)
+max_life = len(secret_word)
 
-word=["_"]*len(secret_word)
-#word= list("_"*len(secret_word))
-print(word)
+word = ["_"] * len(secret_word)
 
-game_over = False
-while not game_over:
-    guess = input("Guess The Letter:").lower()
-    i=0 #score
-    f=0 # fails
-    for p in range(len(secret_word)): # p is possition (0,1,2,3,4,5)
-        letter = secret_word[p]    # letter at the possition p
-        i+=1
-        if letter == guess:
-            print("Possition is ", p+1)
-            word[p] = letter
-        else:  f+=1
+print(f"The word has {len(secret_word)} letters.\n")
 
-    print(word)
+HANGMAN_STAGES = [
+    """
+       -----
+       |   |
+           |
+           |
+           |
+           |
+    =========""",
+    """
+       -----
+       |   |
+       O   |
+           |
+           |
+           |
+    =========""",
+    """
+       -----
+       |   |
+       O   |
+       |   |
+           |
+           |
+    =========""",
+    """
+       -----
+       |   |
+       O   |
+      /|   |
+           |
+           |
+    =========""",
+    """
+       -----
+       |   |
+       O   |
+      /|\\  |
+           |
+           |
+    =========""",
+    """
+       -----
+       |   |
+       O   |
+      /|\\  |
+      /    |
+           |
+    =========""",
+    """
+       -----
+       |   |
+       O   |
+      /|\\  |
+      / \\  |
+           |
+    =========""",
+]
+
+
+# ── Game Loop ───────────────────────────────────────────────────
+fail = 0
+guessed_letters = []
+score = 0
+
+while fail < max_life:
+
+    display_status(word, fail, guessed_letters)
+
+    guess = valid_guess(guessed_letters)
+    guessed_letters.append(guess)
+
+    if guess in secret_word:
+        print("✅ Correct!\n")
+        for index, letter in enumerate(secret_word):   # index starts at 0 — correct!
+            if guess == letter:
+                word[index] = letter
+                score += 10
+    else:
+        fail += 1
+        print(f"❌ Wrong! {max_life - fail} lives remaining.\n")
+
     if "_" not in word:
-        print ("You Won")
-        print("Your Score Is : ",i)
-        game_over= True
-    if f == 6:
-        print ("Too Many Tires, You Lost")
-        game_over= True
+        display_status(word, fail, guessed_letters)
+        print("🎉 YOU WIN!")
+        print(f"Your Score: {score}")
+        break
+
+else:
+    display_status(word, fail, guessed_letters)
+    print("💀 Too many tries! You lost.")
+    print(f"The word was: '{secret_word}'")
+    print(f"Your Score: {max(0, score - 100)}")
+
+
+
+
+
