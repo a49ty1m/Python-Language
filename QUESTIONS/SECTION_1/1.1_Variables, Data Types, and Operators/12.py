@@ -19,7 +19,7 @@ def augmented_assignment_operators(a, b):
 x = 10
 y = 2
 
-print(f"Initial value of a : {a}")
-print(f"Initial value of b : {b}")
+print(f"Initial value of a : {x}")
+print(f"Initial value of b : {y}")
 
 augmented_assignment_operators(x, y)
